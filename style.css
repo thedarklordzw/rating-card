@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass&display=swap');
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --orange: hsl(25, 97%, 53%);
+  --white: hsl(0, 0%, 100%);
+  --light-grey: hsl(217, 12%, 63%);
+  --medium-grey: hsl(216, 12%, 54%);
+  --dark-blue-1: hsl(213, 19%, 18%);
+  --dark-blue-2: hsl(216, 12%, 8%);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: Overpass;
+  height: 100vh;
+}
+
+.section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+figure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+  background-color: var(--dark-blue-2);
+  /* height: 40rem; */
+  width: 40rem;
+}
+
+.row {
+  margin: 11% 10% 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 70%;
+}
+
+.row > h2 {
+  color: var(--white);
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.row > p {
+  color: var(--light-grey);
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+}
+.round > svg {
+  fill: var(--orange);
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+}
+
+.container > .btn {
+  border-radius: 50%;
+  border: none;
+  height: 4rem;
+  width: 4rem;
+  background-color: var(--dark-blue-1);
+  color: var(--medium-grey);
+  font-weight: 600;
+  transition: all 0.3s ease-in;
+}
+
+.container > .btn:hover {
+  color: var(--white);
+  background-color: var(--orange);
+}
+
+.submit {
+  border-radius: 1000px;
+  border: none;
+  font-size: 1.6rem;
+  padding: 1.5rem 0;
+  text-transform: uppercase;
+  background-color: var(--orange);
+  color: var(--white);
+  transition: all 0.3s ease-in;
+}
+
+.submit:hover {
+  background-color: var(--white);
+  color: var(--orange);
+}
+
+button {
+  cursor: pointer;
+}
+
+.round {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background-color: #fff;
+  position: relative;
+  margin-bottom: 1.5rem;
+  background-color: var(--dark-blue-1);
+}
+
+.star {
+  display: inline-block;
+  color: var(--orange);
+  width: 2rem;
+  height: 2rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
