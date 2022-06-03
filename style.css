@@ -33,6 +33,10 @@ body {
 }
 
 figure {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -40,6 +44,7 @@ figure {
   background-color: var(--dark-blue-2);
   /* height: 40rem; */
   width: 40rem;
+  height: 37.5rem;
 }
 
 .row {
@@ -48,6 +53,10 @@ figure {
   flex-direction: column;
   justify-content: space-between;
   height: 70%;
+}
+
+.row__alt {
+  text-align: center;
 }
 
 .row > h2 {
@@ -126,4 +135,16 @@ button {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.card-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+.thanks {
+  width: 10rem;
+  height: auto;
+  display: block;
+  margin: 0 auto;
 }
